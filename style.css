@@ -1,3 +1,4 @@
+/* BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
     line-height: 1.7;
     max-width: 900px;
     margin: auto;
-    padding: 40px;
+    padding: 40px 20px; /* add some horizontal padding for mobile */
   }
   
   a {
@@ -23,8 +24,10 @@
     text-decoration: underline;
   }
   
+  /* HERO */
   .hero {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    text-align: center; /* center text for smaller screens */
   }
   
   .prompt {
@@ -43,26 +46,36 @@
   }
   
   .hero-actions a {
-    margin-right: 24px;
+    margin-right: 16px;
     font-size: 0.95rem;
   }
   
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* SECTIONS */
   section {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #66ff99;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   
-  .job, .project {
+  /* JOB & PROJECT CARDS */
+  .job,
+  .project {
     background: #111611;
     border-left: 3px solid #66ff99;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
   }
   
   .meta {
@@ -85,10 +98,11 @@
     margin-bottom: 6px;
   }
   
+  /* SKILLS GRID */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
   }
   
   h4 {
@@ -96,11 +110,46 @@
     color: #b3ffcc;
   }
   
+  /* FOOTER */
   footer {
     border-top: 1px solid #66ff99;
-    padding-top: 20px;
+    padding-top: 16px;
     font-size: 0.85rem;
     text-align: center;
     opacity: 0.8;
+  }
+  
+  /* MEDIA QUERIES FOR MOBILE */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .tagline {
+      font-size: 0.9rem;
+    }
+  
+    .hero-actions a {
+      font-size: 0.85rem;
+      margin-right: 8px;
+      padding: 6px 12px;
+    }
+  
+    .job,
+    .project {
+      padding: 12px;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr; /* stack vertically on mobile */
+    }
+  
+    body {
+      padding: 20px 12px;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
   }
   
