@@ -1,83 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Archit | Software Developer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Archit Baliyan | Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h1>Hi, I’m Archit 👋</h1>
-    <p>Software Developer who breaks bugs for a living</p>
-    <a href="#projects" class="btn">See my work ↓</a>
-  </section>
+    <header class="hero">
+        <h1>&gt; Archit Baliyan</h1>
+        <p class="tagline">Software Development Engineer · Backend · Distributed Systems</p>
+        <p class="contact">
+            📧 <a href="mailto:baliyanarchit234@gmail.com">baliyanarchit234@gmail.com</a> |
+            🔗 <a href="https://linkedin.com/in/archit3103" target="_blank">LinkedIn</a>
+        </p>
+    </header>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-      I write backend-heavy code, occasionally touch frontend,
-      and permanently live in <code>O(n)</code> land.
-    </p>
-    <p>
-      I enjoy solving hard problems, clean system design,
-      and pretending I’ll refactor later.
-    </p>
-  </section>
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Software Development Engineer with ~3 years of experience building and scaling
+            high-throughput backend systems. Strong expertise in Python-based microservices,
+            real-time scheduling, and distributed systems. Proven impact across automation,
+            scalability, and cost optimization in production environments.
+        </p>
+    </section>
 
-  <!-- Skills -->
-  <section class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Java</span>
-      <span>Python</span>
-      <span>Go</span>
-      <span>Spring Boot</span>
-      <span>System Design</span>
-      <span>SQL</span>
-      <span>Docker</span>
-    </div>
-  </section>
+    <section>
+        <h2>Experience</h2>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+        <div class="card">
+            <h3>TATA 1MG — Software Development Engineer</h3>
+            <span class="meta">Jul 2023 – Present · Gurgaon</span>
+            <ul>
+                <li>Architected a real-time job scheduling system using APScheduler, replacing static CRON jobs and automating 90% of delivery partner assignments.</li>
+                <li>Decoupled authentication from monolithic WMS into a standalone user microservice, reducing deployment time by 15%.</li>
+                <li>Built and scaled Django REST APIs handling 10,000+ diagnostic orders/day.</li>
+                <li>Designed a phlebotomist assignment algorithm reducing slot breaches by 7% and cutting logistics cost by ₹10 per order.</li>
+                <li>Enabled 1-hour medicine deliveries by refactoring warehouse APIs and scaling across 50 retail stores.</li>
+                <li>Automated SKU-level margin deviation detection, recovering ₹5L/month in lost margins.</li>
+                <li>Mentored 3 engineers through internal bootcamps and production projects.</li>
+                <li>Built CI pipelines with Pytest enforcing 90% coverage, reducing QA effort by 35%.</li>
+                <li>Integrated AI coding agents to accelerate delivery by 30% and reduce review time by 50%.</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>📦 File Upload Service</h3>
-      <p>MinIO + Presigned URLs + Sanic</p>
-      <a href="#">GitHub →</a>
-    </div>
+    <section>
+        <h2>Projects</h2>
 
-    <div class="project">
-      <h3>🥖 Sourdough Bakery App</h3>
-      <p>Inventory + Orders + Analytics</p>
-      <a href="#">GitHub →</a>
-    </div>
+        <div class="card">
+            <h3>PDF Parser</h3>
+            <p>
+                End-to-end PDF processing solution using React.js and Python Sanic to parse
+                text-based and scanned documents with search, highlighting, and bounding box rendering.
+            </p>
+        </div>
 
-    <div class="project">
-      <h3>🧠 DSA Notes</h3>
-      <p>Explaining hard problems simply</p>
-      <a href="#">GitHub →</a>
-    </div>
-  </section>
+        <div class="card">
+            <h3>Java Compiler</h3>
+            <p>
+                Built a multi-phase compiler for a Java subset including lexical analysis,
+                semantic analysis, symbol table management, and intermediate code generation.
+            </p>
+        </div>
 
-  <!-- Contact -->
-  <section class="section contact">
-    <h2>Let’s Talk</h2>
-    <p>
-      📧 <a href="mailto:archit@email.com">archit@email.com</a><br/>
-      🐙 <a href="https://github.com/yourusername" target="_blank">GitHub</a><br/>
-      💼 <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+        <div class="card">
+            <h3>Google BBR Analysis</h3>
+            <p>
+                Analyzed packet queue performance under Google’s BBR congestion control
+                and validated results using NS-3 simulations.
+            </p>
+        </div>
+    </section>
 
-  <footer>
-    <p>Built with ☕ and minimal CSS</p>
-  </footer>
+    <section>
+        <h2>Skills</h2>
+
+        <div class="grid">
+            <div>
+                <h4>Languages</h4>
+                <p>Python, Ruby, JavaScript, TypeScript, Java</p>
+            </div>
+            <div>
+                <h4>Frameworks</h4>
+                <p>FastAPI, Django, Sanic, React, Tailwind, APScheduler, Pytest</p>
+            </div>
+            <div>
+                <h4>Databases</h4>
+                <p>PostgreSQL, MongoDB, Elasticsearch, Redis</p>
+            </div>
+            <div>
+                <h4>Infrastructure</h4>
+                <p>AWS, Docker, Kubernetes, Linux, Kafka, SQS</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>M.Tech — Computer Science</h3>
+            <p>Indian Institute of Technology, Mandi</p>
+        </div>
+
+        <div class="card">
+            <h3>B.Tech — Computer Science</h3>
+            <p>University of Petroleum and Energy Studies, Dehradun</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&gt; Built with ☕, debugging, and black terminals.</p>
+    </footer>
 
 </body>
 </html>
