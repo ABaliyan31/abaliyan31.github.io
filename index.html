@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Archit Baliyan | Software Engineer</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archit Baliyan | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header class="hero">
-        <h1>&gt; Archit Baliyan</h1>
-        <p class="tagline">Software Development Engineer · Backend · Distributed Systems</p>
-        <p class="contact">
-            📧 <a href="mailto:baliyanarchit234@gmail.com">baliyanarchit234@gmail.com</a> |
-            🔗 <a href="https://linkedin.com/in/archit3103" target="_blank">LinkedIn</a>
-        </p>
-    </header>
+  <!-- HERO -->
+  <header class="hero">
+    <p class="prompt">$ profile</p>
+    <h1>Archit Baliyan</h1>
+    <p class="tagline">
+      Software Engineer · Backend Systems · Distributed Architecture
+    </p>
 
-    <section>
-        <h2>Summary</h2>
-        <p>
-            Software Development Engineer with ~3 years of experience building and scaling
-            high-throughput backend systems. Strong expertise in Python-based microservices,
-            real-time scheduling, and distributed systems. Proven impact across automation,
-            scalability, and cost optimization in production environments.
-        </p>
-    </section>
+    <div class="hero-actions">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
-    <section>
-        <h2>Experience</h2>
+  <!-- ABOUT -->
+  <section>
+    <h2>$ summary</h2>
+    <p>
+      Backend-focused software engineer with ~3 years of experience building
+      and scaling production systems. Strong background in Java and Python-based
+      microservices, real-time scheduling, and distributed system design.
+    </p>
+    <p>
+      Experienced in owning features end-to-end, optimizing reliability and
+      cost, and collaborating across product and engineering teams.
+    </p>
+  </section>
 
-        <div class="card">
-            <h3>TATA 1MG — Software Development Engineer</h3>
-            <span class="meta">Jul 2023 – Present · Gurgaon</span>
-            <ul>
-                <li>Architected a real-time job scheduling system using APScheduler, replacing static CRON jobs and automating 90% of delivery partner assignments.</li>
-                <li>Decoupled authentication from monolithic WMS into a standalone user microservice, reducing deployment time by 15%.</li>
-                <li>Built and scaled Django REST APIs handling 10,000+ diagnostic orders/day.</li>
-                <li>Designed a phlebotomist assignment algorithm reducing slot breaches by 7% and cutting logistics cost by ₹10 per order.</li>
-                <li>Enabled 1-hour medicine deliveries by refactoring warehouse APIs and scaling across 50 retail stores.</li>
-                <li>Automated SKU-level margin deviation detection, recovering ₹5L/month in lost margins.</li>
-                <li>Mentored 3 engineers through internal bootcamps and production projects.</li>
-                <li>Built CI pipelines with Pytest enforcing 90% coverage, reducing QA effort by 35%.</li>
-                <li>Integrated AI coding agents to accelerate delivery by 30% and reduce review time by 50%.</li>
-            </ul>
-        </div>
-    </section>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>$ experience</h2>
 
-    <section>
-        <h2>Projects</h2>
+    <div class="job">
+      <h3>Tata 1mg</h3>
+      <span class="meta">Software Development Engineer · 2023 – Present</span>
 
-        <div class="card">
-            <h3>PDF Parser</h3>
-            <p>
-                End-to-end PDF processing solution using React.js and Python Sanic to parse
-                text-based and scanned documents with search, highlighting, and bounding box rendering.
-            </p>
-        </div>
+      <ul>
+        <li>Designed and scaled backend APIs handling <strong>10,000+</strong> diagnostic orders per day.</li>
+        <li>Replaced static CRON workflows with real-time scheduling, automating <strong>~90%</strong> of partner assignments.</li>
+        <li>Improved delivery slot adherence by <strong>7%</strong> through optimized assignment logic.</li>
+        <li>Built margin deviation detection at SKU level, recovering approximately <strong>₹5L/month</strong>.</li>
+        <li>Enabled <strong>1-hour medicine delivery</strong> by scaling warehouse APIs across 50+ retail stores.</li>
+        <li>Mentored junior engineers and contributed to internal onboarding programs.</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="card">
-            <h3>Java Compiler</h3>
-            <p>
-                Built a multi-phase compiler for a Java subset including lexical analysis,
-                semantic analysis, symbol table management, and intermediate code generation.
-            </p>
-        </div>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>$ projects</h2>
 
-        <div class="card">
-            <h3>Google BBR Analysis</h3>
-            <p>
-                Analyzed packet queue performance under Google’s BBR congestion control
-                and validated results using NS-3 simulations.
-            </p>
-        </div>
-    </section>
+    <div class="project">
+      <h3>PDF Parsing Platform</h3>
+      <p class="tech">Python · Sanic · React</p>
+      <p>
+        Built a document processing system capable of parsing both scanned
+        and digital PDFs, supporting text extraction, search, highlighting,
+        and coordinate-based rendering.
+      </p>
+    </div>
 
-    <section>
-        <h2>Skills</h2>
+    <div class="project">
+      <h3>Java Compiler</h3>
+      <p class="tech">Java · Compiler Design</p>
+      <p>
+        Implemented a multi-stage compiler for a Java subset, including
+        lexical analysis, semantic validation, symbol table management,
+        and intermediate code generation.
+      </p>
+    </div>
 
-        <div class="grid">
-            <div>
-                <h4>Languages</h4>
-                <p>Python, Ruby, JavaScript, TypeScript, Java</p>
-            </div>
-            <div>
-                <h4>Frameworks</h4>
-                <p>FastAPI, Django, Sanic, React, Tailwind, APScheduler, Pytest</p>
-            </div>
-            <div>
-                <h4>Databases</h4>
-                <p>PostgreSQL, MongoDB, Elasticsearch, Redis</p>
-            </div>
-            <div>
-                <h4>Infrastructure</h4>
-                <p>AWS, Docker, Kubernetes, Linux, Kafka, SQS</p>
-            </div>
-        </div>
-    </section>
+    <div class="project">
+      <h3>BBR Congestion Control Analysis</h3>
+      <p class="tech">Networking · NS-3</p>
+      <p>
+        Analyzed queue behavior and throughput under Google’s BBR congestion
+        control algorithm using network simulations.
+      </p>
+    </div>
+  </section>
 
-    <section>
-        <h2>Education</h2>
+  <!-- SKILLS -->
+  <section>
+    <h2>$ skills</h2>
 
-        <div class="card">
-            <h3>M.Tech — Computer Science</h3>
-            <p>Indian Institute of Technology, Mandi</p>
-        </div>
+    <div class="skills-grid">
+      <div>
+        <h4>Backend</h4>
+        <p>Java ,Python, Spring Boot, Django, FastAPI, Sanic</p>
+      </div>
 
-        <div class="card">
-            <h3>B.Tech — Computer Science</h3>
-            <p>University of Petroleum and Energy Studies, Dehradun</p>
-        </div>
-    </section>
+      <div>
+        <h4>Databases</h4>
+        <p>PostgreSQL, MongoDB, Redis, Elasticsearch</p>
+      </div>
 
-    <footer>
-        <p>&gt; Built with ☕, debugging, and black terminals.</p>
-    </footer>
+      <div>
+        <h4>Message queues</h4>
+        <p>Kafka, SQS, Redis pub/sub</p>
+      </div>
+
+      <div>
+        <h4>Infrastructure</h4>
+        <p>AWS, Docker, Kubernetes, Linux</p>
+      </div>
+
+      <div>
+        <h4>Architecture</h4>
+        <p>REST APIs, microservices, object-oriented programming, System Design(HLD/LLD)</p>
+      </div>
+
+      <div>
+        <h4>Testing & Tooling</h4>
+        <p>Pytest, CI pipelines, coverage enforcement</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>$ contact</h2>
+    <p>
+      Email: <a href="mailto:baliyanarchit234@gmail.com">baliyanarchit234@gmail.com</a><br/>
+      LinkedIn: <a href="https://linkedin.com/in/archit3103" target="_blank">linkedin.com/in/archit3103</a><br/>
+    </p>
+  </section>
+
+  <footer>
+    <p>© Archit Baliyan · Built with HTML & CSS · Hosted on GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
