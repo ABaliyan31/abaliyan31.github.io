@@ -3,143 +3,254 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Archit Baliyan | Software Engineer</title>
+  <title>Archit Baliyan | Software Development Engineer</title>
+  <meta name="description" content="Archit Baliyan — Software Development Engineer building backend systems, distributed architecture, and AI-driven developer tooling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="#top" class="logo">AB<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+      <a href="assets/Archit_Baliyan_Resume.pdf" target="_blank" class="nav-cta">resume ↗</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <header class="hero">
-    <p class="prompt">$ profile</p>
-    <h1>Archit Baliyan</h1>
+  <header class="hero" id="top">
+    <p class="prompt">$ whoami<span class="caret">&nbsp;</span></p>
+    <h1>Archit <span class="grad">Baliyan</span></h1>
+    <p class="role-line">
+      <span class="role-static">Building&nbsp;</span><span id="roleTyped" class="grad-cyan"></span><span class="caret caret--inline">&nbsp;</span>
+    </p>
     <p class="tagline">
-      Software Engineer · Backend Systems · Distributed Architecture
+      SDE·2 @ Tata 1mg — backend systems, distributed architecture, and
+      AI-driven developer tooling, in production, at scale.
     </p>
 
     <div class="hero-actions">
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Links</a>
+      <a href="#experience" class="btn btn--primary">$ view_experience</a>
+      <a href="#projects" class="btn">$ view_projects</a>
+      <a href="assets/Archit_Baliyan_Resume.pdf" target="_blank" class="btn btn--ghost">↓ resume.pdf</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">~3</span><span class="stat-label">years shipping backend</span></div>
+      <div class="stat"><span class="stat-num">200+</span><span class="stat-label">microservices scanned</span></div>
+      <div class="stat"><span class="stat-num">10k+</span><span class="stat-label">orders / day served</span></div>
     </div>
   </header>
 
+  <main>
   <!-- ABOUT -->
-  <section>
-    <h2>$ summary</h2>
+  <section class="reveal" id="about">
+    <h2><span class="tag">01</span> $ summary</h2>
     <p>
-      Backend-focused software engineer with ~3 years of experience building
-      and scaling production systems. Strong background in Java and Python-based
-      microservices, real-time scheduling, and distributed system design.
+      Software Development Engineer with ~3 years of experience building and scaling
+      backend systems for high-throughput, production-grade platforms. Strong expertise
+      in Python-based microservices, real-time scheduling, and distributed systems —
+      with a growing focus on <strong>AI-driven automation</strong>, including LLM-based
+      agents and AI-powered developer tooling.
     </p>
     <p>
-      Experienced in owning features end-to-end, optimizing reliability and
-      cost, and collaborating across product and engineering teams.
+      I own features end-to-end — design, implementation, production rollout — in
+      fast-paced, agile environments, and I like pulling AI into the workflow itself,
+      not just the product.
     </p>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>$ experience</h2>
+  <section class="reveal" id="experience">
+    <h2><span class="tag">02</span> $ experience</h2>
 
-    <div class="job">
-      <h3>Tata 1mg</h3>
-      <span class="meta">Software Development Engineer · 2023 – Present</span>
+    <div class="job spotlight">
+      <div class="job-head">
+        <h3>Software Development Engineer 2 <span class="at">@ Tata 1mg</span></h3>
+        <span class="meta">Gurgaon · 07/2023 – Present</span>
+      </div>
 
       <ul>
-        <li>Designed and scaled backend APIs handling <strong>10,000+</strong> diagnostic orders per day.</li>
-        <li>Replaced static CRON workflows with real-time scheduling, automating <strong>~90%</strong> of partner assignments.</li>
-        <li>Improved delivery slot adherence by <strong>7%</strong> through optimized assignment logic.</li>
-        <li>Built margin deviation detection at SKU level, recovering approximately <strong>₹5L/month</strong>.</li>
-        <li>Enabled <strong>1-hour medicine delivery</strong> by scaling warehouse APIs across 50+ retail stores.</li>
-        <li>Mentored junior engineers and contributed to internal onboarding programs.</li>
+        <li>Architected a real-time job scheduling system using <strong>APScheduler</strong>, replacing static CRON jobs and automating <strong>90%</strong> of delivery partner order assignments.</li>
+        <li>Decoupled authentication from a monolithic WMS into an independent user microservice — unified auth across <strong>5 internal services</strong>, cutting deployment time by <strong>15%</strong>.</li>
+        <li>Built and scaled Django REST APIs for a phlebotomist sample collection platform, handling <strong>10,000+ diagnostic orders/day</strong>, with React + Tailwind dashboards for real-time order tracking.</li>
+        <li>Designed a phlebotomist assignment algorithm — reduced slot breaches by <strong>7%</strong> and moved logistics in-house, cutting cost by <strong>₹10/order</strong>.</li>
+        <li>Refactored warehouse APIs for direct retail integration, enabling <strong>1-hour medicine delivery</strong> across <strong>50+ stores</strong> in Gurgaon.</li>
+        <li>Integrated AI coding agents into the dev workflow for boilerplate, refactors, and reviews — <strong>30% faster</strong> feature delivery, <strong>50% less</strong> L1/L2 review time.</li>
+        <li>Built an AI-powered vulnerability scanner for on-demand, repo-level static analysis across the org's <strong>200+ microservices</strong>, triaging High/Medium/Low — mandated org-wide, driving services toward zero open vulnerabilities.</li>
+        <li>Built a Bitbucket CI/CD pipeline with Pytest, enforcing <strong>90% code coverage</strong> and cutting manual QA effort by <strong>35%</strong>.</li>
+        <li>Mentored <strong>3 engineers</strong> (2 backend, 1 frontend) through internal boot camps to <strong>3 successful production launches</strong>.</li>
       </ul>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2>$ projects</h2>
+  <section class="reveal" id="projects">
+    <h2><span class="tag">03</span> $ projects</h2>
 
-    <div class="project">
-      <h3>PDF Parsing Platform</h3>
-      <p class="tech">Python · Sanic · React</p>
-      <p>
-        Built a document processing system capable of parsing both scanned
-        and digital PDFs, supporting text extraction, search, highlighting,
-        and coordinate-based rendering.
-      </p>
-    </div>
+    <div class="project-grid">
+      <div class="project spotlight">
+        <div class="project-top">
+          <h3>Restaurant AI Concierge Agent</h3>
+          <span class="project-badge">AI / LLM</span>
+        </div>
+        <p class="tech">LangGraph · LLM Agents · RAG</p>
+        <p>
+          LangGraph-based chatbot agent answering restaurant FAQs on menus,
+          timings, and reservations — grounded in live menu and seat-availability
+          data for accurate, hallucination-resistant responses.
+        </p>
+      </div>
 
-    <div class="project">
-      <h3>Java Compiler</h3>
-      <p class="tech">Java · Compiler Design</p>
-      <p>
-        Implemented a multi-stage compiler for a Java subset, including
-        lexical analysis, semantic validation, symbol table management,
-        and intermediate code generation.
-      </p>
-    </div>
+      <div class="project spotlight">
+        <div class="project-top">
+          <h3>PDF Parsing Platform</h3>
+          <span class="project-badge">Full-stack</span>
+        </div>
+        <p class="tech">Python · Sanic · React</p>
+        <p>
+          Document processing system for scanned and digital PDFs — text
+          extraction, search, highlighting, and coordinate-based rendering.
+        </p>
+      </div>
 
-    <div class="project">
-      <h3>BBR Congestion Control Analysis</h3>
-      <p class="tech">Networking · NS-3</p>
-      <p>
-        Analyzed queue behavior and throughput under Google’s BBR congestion
-        control algorithm using network simulations.
-      </p>
+      <div class="project spotlight">
+        <div class="project-top">
+          <h3>Java Compiler</h3>
+          <span class="project-badge">Systems</span>
+        </div>
+        <p class="tech">Java · Compiler Design</p>
+        <p>
+          Multi-phase compiler for a Java subset — lexical analysis, symbol
+          table management, semantic validation, and intermediate code
+          generation. Successfully executed 1,000+ lines of code.
+        </p>
+      </div>
+
+      <div class="project spotlight">
+        <div class="project-top">
+          <h3>Google BBR Analysis</h3>
+          <span class="project-badge">Networking</span>
+        </div>
+        <p class="tech">Networking · NS-3</p>
+        <p>
+          Performance analysis of packet queue under-utilization in Google's
+          BBR congestion control algorithm, verified via NS-3 simulation.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section>
-    <h2>$ skills</h2>
+  <section class="reveal" id="skills">
+    <h2><span class="tag">04</span> $ skills</h2>
 
     <div class="skills-grid">
-      <div>
-        <h4>Backend</h4>
-        <p>Java ,Python, Spring Boot, Django, FastAPI, Sanic</p>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="chips">
+          <span>Python</span><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>Ruby</span>
+        </div>
       </div>
 
-      <div>
+      <div class="skill-group">
+        <h4>Frameworks</h4>
+        <div class="chips">
+          <span>Django</span><span>FastAPI</span><span>Sanic</span><span>Spring Boot</span><span>React.js</span><span>Tailwind CSS</span><span>APScheduler</span><span>Celery</span><span>Pytest</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>AI / LLM Tools</h4>
+        <div class="chips chips--ai">
+          <span>LangGraph</span><span>LLM Agents</span><span>RAG</span><span>Claude Code</span><span>Codex</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
         <h4>Databases</h4>
-        <p>PostgreSQL, MongoDB, Redis, Elasticsearch</p>
+        <div class="chips">
+          <span>PostgreSQL</span><span>MongoDB</span><span>Elasticsearch</span><span>Redis</span>
+        </div>
       </div>
 
-      <div>
-        <h4>Message queues</h4>
-        <p>Kafka, SQS, Redis pub/sub</p>
+      <div class="skill-group">
+        <h4>Message Queues</h4>
+        <div class="chips">
+          <span>Kafka</span><span>SQS</span><span>Redis Pub/Sub</span>
+        </div>
       </div>
 
-      <div>
-        <h4>Infrastructure</h4>
-        <p>AWS, Docker, Kubernetes, Linux</p>
+      <div class="skill-group">
+        <h4>Cloud &amp; Infrastructure</h4>
+        <div class="chips">
+          <span>AWS S3</span><span>RDS</span><span>EC2</span><span>Lambda</span><span>AWS CLI</span><span>Docker</span><span>Kubernetes</span><span>Linux</span>
+        </div>
       </div>
 
-      <div>
+      <div class="skill-group">
         <h4>Architecture</h4>
-        <p>REST APIs, microservices, object-oriented programming, System Design(HLD/LLD)</p>
+        <div class="chips">
+          <span>REST APIs</span><span>Microservices</span><span>Event-Driven</span><span>gRPC</span><span>System Design (HLD/LLD)</span><span>OOP</span>
+        </div>
       </div>
 
-      <div>
-        <h4>Testing & Tooling</h4>
-        <p>Pytest, CI pipelines, coverage enforcement</p>
+      <div class="skill-group">
+        <h4>Dev Tools</h4>
+        <div class="chips">
+          <span>Git</span><span>Jira</span><span>CI/CD</span><span>Agile/Scrum</span><span>TDD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="reveal" id="education">
+    <h2><span class="tag">05</span> $ education</h2>
+
+    <div class="edu-grid">
+      <div class="edu spotlight">
+        <h3>M.Tech · Computer Science</h3>
+        <span class="meta">Indian Institute of Technology Mandi · 07/2023</span>
+      </div>
+      <div class="edu spotlight">
+        <h3>B.Tech · Computer Science</h3>
+        <span class="meta">University of Petroleum &amp; Energy Studies, Dehradun · 07/2020</span>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <h2>$ Links</h2>
-    <p>
-      Email: <a href="mailto:baliyanarchit234@gmail.com">baliyanarchit234@gmail.com</a><br/>
-      LinkedIn: <a href="https://linkedin.com/in/archit3103" target="_blank">linkedin.com/in/archit3103</a><br/>
-      Leetcode: <a href="https://leetcode.com/u/baliyanarchit234/" target="_blank">leetcode.com/u/baliyanarchit234</a><br/>
-    </p>
+  <section class="reveal" id="contact">
+    <h2><span class="tag">06</span> $ contact</h2>
+    <p class="contact-intro">Open to backend, distributed systems, and AI-tooling conversations.</p>
+    <div class="contact-links">
+      <a href="mailto:baliyanarchit234@gmail.com" class="btn btn--primary">✉ Email</a>
+      <a href="https://www.linkedin.com/in/archit3103/" target="_blank" class="btn">in LinkedIn</a>
+    </div>
   </section>
+  </main>
 
   <footer>
-    <p>© Archit Baliyan · Built with HTML & CSS · Hosted on GitHub Pages</p>
+    <p>© <span id="year"></span> Archit Baliyan · Built with HTML, CSS &amp; a little JS · Hosted on GitHub Pages</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
